@@ -1,5 +1,5 @@
-(function( $ ) {
-  $.fn.progressbar = function ( options ) {
+(function($) {
+  $.fn.progressbar = function (options) {
 
     var opts = $.extend({ }, options);
 
@@ -13,6 +13,7 @@
       $.each(opts.steps, function(index, value) {
         var $li = $('<li>').text(value.replace('@', '').replace('~', ''));
         $li.css('width', (100 / opts.steps.length) + '%');
+
         if(value.indexOf('@') > -1) {
           $li.addClass('current');
           currentIdx = index;
@@ -32,4 +33,4 @@
       $this.append($ul);
     });
   };
-})( jQuery );
+})(jQuery);
