@@ -22,3 +22,7 @@ jQuery(document).ready(function($) {
 
 * `~` means **Failed**
 * `@` means **Current**
+
+### Thanks
+
+https://www.youtube.com/watch?v=DYevj6UGNWA
