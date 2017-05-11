@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./jquery.progressbar.js"></script>
+  <link rel="stylesheet" media="all" href="./jquery.progressbar.css" />
+  <style type="text/css">
+  body {
+	font-size: 18px;
+	font-family: Helvetica;
+  }
+  .container {
+	margin-top: 50px;
+  }
+  </style>
+  <script type="text/javascript">
+    $(function() {
+      $(".progressbar").progressbar({
+       steps: ['Setp 1', 'Setp 2', '~Step 3 Failed', '@Step 4 ( Current )', 'Step 5', 'Step 6']
+      });
+    });
+  </script>
+  <title>JQuery ProgressBar Demo</title>
+</head>
+<body>
+  <div class="container">
+    <div class="progressbar"></div>
+  </div>
+</body>
+</html>
