@@ -5,14 +5,14 @@
 ### HTML
 
 ```html
-<div class="progressbar"></div>
+<div id="steps"></div>
 ```
 
 ### JavaScript
 
 ```js
 jQuery(document).ready(function($) {
-  $(".progressbar").progressbar({
+  $('#steps').progressbar({
     steps: ['Setp 1', 'Setp 2', '~Step 3 Failed', '@Step 4 ( Current )', 'Step 5', 'Step 6']
   });
 });
